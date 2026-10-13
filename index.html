@@ -489,7 +489,7 @@ html {
 ><input
     type="hidden"
     name="_redirect"
-    value="https://olexandr-ctrl.github.io/garage24-test/"
+value="https://olexandr-ctrl.github.io/garage24-test/?sent=1"
 >
     <label for="client-name">Твоё имя</label>
     <input
@@ -550,6 +550,17 @@ const formMessage = document.getElementById("form-message");
 bookingForm.addEventListener("submit", function() {
     formMessage.textContent = "Отправляем заявку...";
 });
+
+const urlParams = new URLSearchParams(window.location.search);
+
+if (urlParams.get("sent") === "1") {
+    formMessage.textContent =
+        "✅ Заявка успешно отправлена! Мы скоро свяжемся с вами.";
+    formMessage.style.color = "#25D366";
+    formMessage.style.fontWeight = "bold";
+    formMessage.style.marginTop = "15px";
+}
+
 </script>
 
 
