@@ -584,5 +584,22 @@ cards.forEach((card) => {
 });
 </script>
 
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("sent") === "1") {
+    const message = document.getElementById("form-message");
+
+    if (message) {
+        message.textContent =
+            "✅ Заявка успешно отправлена! Мы скоро свяжемся с вами.";
+        message.style.color = "#25D366";
+        message.style.fontWeight = "bold";
+        message.style.marginTop = "15px";
+        message.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+}
+</script>
+
 </body>
 </html>
