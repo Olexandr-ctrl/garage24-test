@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГАРАЖ 24 — Автосервис</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111318;
+            color: white;
+        }
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(17, 19, 24, 0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #30343d;
+}
+
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ff6b22;
+        }
+
+
+nav a {
+    color: #dddddd;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+
+
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    padding: 120px 8%;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background:
+        linear-gradient(90deg,
+            rgba(17, 19, 24, 0.98) 0%,
+            rgba(17, 19, 24, 0.82) 45%,
+            rgba(17, 19, 24, 0.25) 100%),
+        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85")
+        center 55% / cover no-repeat;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #dddddd;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h1 span {
+            color: #ff6b22;
+        }
+
+        .hero p {
+            color: #cccccc;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #ff6b22;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        section {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+
+.service {
+    background: linear-gradient(145deg, #222630, #181b21);
+    padding: 30px 25px;
+    border: 1px solid #343945;
+    border-radius: 14px;
+    width: 220px;
+    text-align: left;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+
+.service:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #ff6b22;
+    box-shadow: 0 12px 35px rgba(255, 107, 34, 0.2);
+}
+
+
+.service h3 {
+    color: #ff6b22;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service p {
+    color: #bfc3cc;
+    line-height: 1.7;
+}
+
+
+        .service h3 {
+            color: #ff6b22;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #191c22;
+            color: #aaaaaa;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+      
+@media (max-width: 600px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+}
+
+.booking-form {
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 8%;
+    background: #191c22;
+    border-top: 1px solid #30343d;
+    border-bottom: 1px solid #30343d;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.stat strong {
+    color: #ff6b22;
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+.stat span {
+    color: #c5c5c5;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+    max-width: 460px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background: #1e222a;
+    border: 1px solid #343945;
+    border-radius: 14px;
+    text-align: left;
+}
+
+.booking-form label {
+    display: block;
+    margin: 18px 0 8px;
+    color: #dddddd;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #414652;
+    border-radius: 6px;
+    background: #111318;
+    color: white;
+    font-size: 16px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: 1px solid #ff6b22;
+    border-color: #ff6b22;
+}
+
+.booking-form button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+}
+#form-message {
+    color: #ffb184;
+    margin-top: 15px;
+}
+  }
+   
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.services .service.scroll-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: none;
+}
+
+.services .service.scroll-card.visible {
+    animation: cardAppear 0.7s ease both;
+}
+
+.services .service.scroll-card.visible:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.services .service.scroll-card.visible:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+.services .service:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.services .service:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.call-button {
+    background: transparent;
+    color: #ff6b22;
+    border: 2px solid #ff6b22;
+    margin-left: 10px;
+}
+
+.call-button:hover {
+    background: #ff6b22;
+    color: #ffffff;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: #ffffff;
+    border: 2px solid #25D366;
+    margin-left: 10px;
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+    border-color: #1da851;
+    color: #ffffff;
+}
+
+.contact-details {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 28px;
+    background: linear-gradient(145deg, #222630, #181b21);
+    border: 1px solid #343945;
+    border-radius: 14px;
+    text-align: left;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-details:hover {
+    border-color: #ff6b22;
+    box-shadow: 0 10px 30px rgba(255, 107, 34, 0.12);
+}
+
+.contact-details h3 {
+    color: #ff6b22;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.contact-details p {
+    color: #c5c5c5;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.contact-details strong {
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .contact-details {
+        margin: 25px 6% 0;
+        padding: 20px;
+    }
+}
+
+ </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ГАРАЖ <span>24</span></div>
+
+        <nav>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Твой автомобиль<br><span>в надёжных руках</span></h1>
+            <p>Профессиональный ремонт и обслуживание автомобилей</p>
+            <a class="button" href="#contacts">Записаться на сервис</a>
+            
+<a class="button call-button" href="tel:+380000000000">Позвонить нам</a>
+
+<a class="button whatsapp-button" href="https://wa.me/380000000000" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+
+        </div>
+
+        <section id="services">
+            <h2>Наши услуги</h2>
+
+            <div class="services">
+                <div class="service">
+                    <h3>Диагностика</h3>
+                    <p>Поиск неисправностей автомобиля</p>
+                </div>
+
+                <div class="service">
+                    <h3>Ремонт двигателя</h3>
+                    <p>Обслуживание и ремонт двигателя</p>
+                </div>
+
+                <div class="service">
+                    <h3>Ходовая часть</h3>
+                    <p>Ремонт подвески и тормозов</p>
+                </div>
+            </div>
+        </section>
+
+<section id="about">
+    <h2>Почему выбирают нас?</h2>
+
+    <div class="services">
+        <div class="service">
+            <h3>🛡️ Гарантия</h3>
+            <p>Условия гарантии на работы согласовываются заранее.</p>
+        </div>
+
+        <div class="service">
+            <h3>🔧 Внимание к деталям</h3>
+            <p>Тщательная проверка автомобиля и понятные рекомендации.</p>
+        </div>
+
+        <div class="service">
+            <h3>💰 Честные цены</h3>
+            <p>Обсуждаем стоимость и согласовываем ремонт до начала работ.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <strong>500+</strong>
+        <span>Обслуженных автомобилей</span>
+    </div>
+
+    <div class="stat">
+        <strong>24/7</strong>
+        <span>Приём заявок онлайн</span>
+    </div>
+
+    <div class="stat">
+        <strong>100%</strong>
+        <span>Внимание к качеству</span>
+    </div>
+</section>
+
+        </section>
+
+        <section id="contacts">
+
+<section id="contacts">
+    <h2>Запишись на ремонт</h2>
+    <p>Оставь контактные данные, чтобы обсудить обслуживание автомобиля.</p>
+
+
+<form
+    id="booking-form"
+    class="booking-form"
+    action="https://formsubmit.app/f/mewturtrg4"
+    method="POST"
+><input
+    type="hidden"
+    name="_redirect"
+    value=""
+>
+    <label for="client-name">Твоё имя</label>
+    <input
+        type="text"
+        id="client-name"
+        name="name"
+        placeholder="Например, Алексей"
+        required
+    >
+
+    <label for="client-phone">Номер телефона</label>
+    <input
+        type="tel"
+        id="client-phone"
+        name="phone"
+        placeholder="+380..."
+        pattern="^\+?[0-9\s()\-]{10,20}$"
+        title="Введите номер телефона: от 10 до 20 символов, используйте цифры, +, пробелы, скобки или дефисы"
+        required
+    >
+
+    <label for="car-service">Выбери услугу</label>
+    <select id="car-service" name="service" required>
+        <option value="">Выбрать услугу</option>
+        <option value="Диагностика">Диагностика</option>
+        <option value="Ремонт двигателя">Ремонт двигателя</option>
+        <option value="Ходовая часть">Ходовая часть</option>
+        <option value="Другое">Другое</option>
+    </select>
+
+    <button class="button" type="submit">Отправить заявку</button>
+
+    <p id="form-message" role="status"></p>
+</form>
+
+
+    <div class="contact-details">
+        <h3>Наши контакты</h3>
+
+        <p><strong>Телефон:</strong> Укажите номер автосервиса</p>
+        <p><strong>Адрес:</strong> Укажите адрес автосервиса</p>
+        <p><strong>График:</strong> Укажите часы работы</p>
+
+        <p>Будем рады помочь с вашим автомобилем!</p>
+    </div>
+
+</section>
+        </section>
+    </main>
+    <footer>
+        © 2026 ГАРАЖ 24
+    </footer>
+
+<script>
+const bookingForm = document.getElementById("booking-form");
+const formMessage = document.getElementById("form-message");
+
+bookingForm.addEventListener("submit", function() {
+    formMessage.textContent = "Отправляем заявку...";
+});
+</script>
+
+
+<script>
+const cards = document.querySelectorAll('.services .service');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+cards.forEach((card) => {
+    card.classList.add('scroll-card');
+    observer.observe(card);
+});
+</script>
+
+</body>
+</html>
